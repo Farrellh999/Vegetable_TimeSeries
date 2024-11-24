@@ -1,6 +1,4 @@
-# KC_analysis
-# Data Science Project: Dog Breed Popularity vs Genetic Ailments
-
+# Data Science Project: UK Kennel Club Litter Registrations Analysis (2013 - 2022)
 
 ## Overview
 
