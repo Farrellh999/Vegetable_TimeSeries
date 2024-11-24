@@ -159,7 +159,7 @@ merged_data.info()
 All 117 records now contain values (detected as non-null).
 
 ## Visualise the data
-## Show data in a histogram
+### Show data in a histogram
 data = merged_data['% Change']
 
 plt.hist(data, bins=6, color='skyblue', edgecolor='black')  
@@ -170,7 +170,7 @@ The histogram shows a high frequency of breeds with a negative % change i.e. the
 
 I want to explore if there is a relationship between a breed having a high risk of health issues and the % change in the number of litters registered. 
 
-## Create a "High Risk" column and format the result as binary.
+### Create a "High Risk" column and format the result as binary.
 
 merged_data['High Risk'] = merged_data['Health Issues Risk'].str.contains('High', case=False, na=False).astype(int)  
 
@@ -178,13 +178,115 @@ print(merged_data.head())
 
 ![image](https://github.com/user-attachments/assets/87bc90e3-f3d4-447d-ac7e-8cf52ae86618)
 
-## Check that the correct value has been assigned by viewing all rows of data, focused on the two columns.
+### Check that the correct value has been assigned by viewing all rows of data, focused on the two columns.
 selected_columns= merged_data[['High Risk','Health Issues Risk']]  
 pd.set_option('display.max_rows', None)  
 display(selected_columns)  
 
 ![image](https://github.com/user-attachments/assets/eae277a4-7b21-40a5-a5cd-675c459b8214)
 All rows are displayed and checked to ensure every record identified as having a 'High' value in 'Health Issues Risk' has also been assigned value 1 in the 'High Risk' column.
+
+### Plot the data in a scattergraph
+
+sns.scatterplot(data=merged_data, x='% Change', y='High Risk')  
+plt.show()  
+
+![image](https://github.com/user-attachments/assets/1820bc2c-36d9-482b-b11d-a9df480f0e9f)
+
+## Perform logistic regression to see the relationship between % change in the number of litters being registered and the likelihood of the breed being a high risk health category.  
+
+### Import additional libraries
+from sklearn.model_selection import train_test_split  
+from sklearn.preprocessing import StandardScaler  
+from sklearn.linear_model import LogisticRegression  
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report  
+
+### Assign the indepent and dependent variable
+
+x = merged_data[['% Change']]  
+y = merged_data['High Risk']  
+
+### Split the data into a training set and a testing set.
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)  
+
+### Train the model
+model = LogisticRegression()  
+model.fit(x_train, y_train)  
+
+### Apply the model onto the testing data set
+
+y_pred = model.predict(x_test)  
+
+### Assess model accuracy
+
+accuracy = accuracy_score(y_test, y_pred)  
+print(f'Accuracy: {accuracy:.2f}')  
+
+Accuracy: 0.81
+
+### Show the number of true positives, true negatives, false positive, and false negatives via a Confusion Matrix
+
+cm = confusion_matrix(y_test, y_pred)  
+print('Confusion Matrix:')  
+print(cm)  
+
+![image](https://github.com/user-attachments/assets/d531fec5-7f06-47a8-89a1-56e5ab901d03)
+
+### Refine the model
+The model is failing to predict any false positive or false negatives. This may be because there is a high proportion of data containing a certain binary value. Let's observe the values
+
+unique_count = merged_data['High Risk'].value_counts()  
+
+print(f'Number of unique values: {unique_count}')  
+
+![image](https://github.com/user-attachments/assets/61d42097-59f5-4ba2-9408-967d0cbb3db3)
+Only around 17% of the data contains a positive value for column 'high risk'. There is a data imbalance and the model may be predicting the majority.
+
+### Apply weighted sampling
+
+model = LogisticRegression(class_weight='balanced')  
+model.fit(x_train, y_train)  
+
+### Apply the model onto the testing data set
+
+y_pred = model.predict(x_test)  
+
+### Assess model accuracy
+
+accuracy = accuracy_score(y_test, y_pred)  
+print(f'Accuracy: {accuracy:.2f}')  
+
+Accuracy: 0.72  
+
+72% of the dataset has been correctly assigned.
+
+###  View the Confusion Matrix
+
+cm = confusion_matrix(y_test, y_pred)  
+print('Confusion Matrix:')  
+print(cm)  
+
+![image](https://github.com/user-attachments/assets/5b292c22-cfb9-42a9-957c-9cec05add0ee)
+Some false negatives and false positives were detected.
+
+### Find the model coefficient and intercept to assess the model
+
+intercept = model.intercept_ 
+coef = model.coef_  
+odds_ratio = np.exp(coef[0][0])  
+
+print(f"Intercept: {intercept[0]}")  
+print(f"Coefficient for % Change: {coef[0][0]}")  
+print(f"Odds Ratio for % Change: {odds_ratio}")  
+
+Intercept: -0.05138325875921313
+Coefficient for % Change: 0.002413195108151474
+Odds Ratio for % Change: 1.0024161092070913
+
+The intercept indicates that when there is 0% change, there is still a very slight increase in the likelihood the breed will be categorised as high risk. The coefficient indicates a 0.0454 change in the log-odds of the breed being in the high risk category for each 1% change in litters registered i.e. as the %change in litters registers increase, the likelihood of the breed being in the high risk category also very slightly increases. The odds ratio indicates as the % change in litters registered increased by 1%, the odds the breed will fall under the high risk category are 4.64% higher.
+
+In summary, the breeds with a higher % change in litters registered between 2013 and 2022, demonstrate a higher likelihood of being a breed categorised as having high risk health problems.
 
 
 ### Applying Business Logic
