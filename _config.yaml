@@ -1,3 +1,5 @@
 title: Data Science Portfolio
+logo:
 description: Data Queen // Senior Analyst // Degree Apprentice
-theme: modernist
+show_downloads: true
+theme: jekyll-theme-minimal
