@@ -1,16 +1,16 @@
-# Data Science Project: UK Kennel Club Litter Registrations Analysis (2013 - 2022)
+# Data Science Project: Forecasting soup ingredients to assist decision-making for the most cost-effective production of soup.
 
 ## Overview
 
-This project uses a publicly available dataset which provides data on the number of litters of dogs registered with the UK Kennel Club, broken down by breed, between the years 2013 and 2022. This dataset is merged with a further publicly available dataset which provides variables such as health issues risk, grooming needs, life span etc.
+This project uses a publicly available dataset which provides data on the cost of various ingredients, including potatoes ('tatties') and tomatoes ('tommies'), between the years 2013 and 2021.
 
-Using a logistic regression model, following data engineering, this project aims to uncover the relationship between the % change in litters being registered and whether the breed's health risk is high or not.
+The goal of this project is to explore the use of a time series forecast model as a tool to decide which main ingredient to use (tatties or tommies) for the soup of the week, based on the predicted cost of the two ingredients i.e., whichever ingredient is forecast to be the least expensive for that month will be used and advertised as the 'soup of the day'.
 
 ### Positive Impact
-
+The business will be able to hopefully make data-driven business decisions in order to optimise profit.
 
 ### Negative Impact
-Public perception and opinion, breeds becoming extinct.
+The forecast may influence the use of a certain ingredient at a time when that ingredient is of poor quality, leading to problems further down the line such as customer disatisfaction, the requirement to use additional ingredients to improve the quality of the soup.
 
 ## Conclusion
 
@@ -18,7 +18,7 @@ Public perception and opinion, breeds becoming extinct.
 
 
 # Data Sources
-The dataset can be found at [https://www.kaggle.com/datasets/beckiku/uk-kennel-club-dog-breed-registrations]. This a public dataset, readily available to download to anyone who has a free Kaggle account.
+The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agriculture-vegetables-fruits-time-series-prices?resource=download]. This a public dataset, readily available to download to anyone who has a free Kaggle account.
 
 # Contents
 
@@ -27,20 +27,14 @@ The dataset can be found at [https://www.kaggle.com/datasets/beckiku/uk-kennel-c
 [Project Background](#project-background)
 
 # Project Background
-Dogs are notoriously know as man's best friend, with the vast displays on social media of 'doggos' further illustrating this point. However, with the emergence of social media, in addition to the displays of love and affection these animals bring, it is becoming more common to bare witness to the public debates surrounding the ethics of dog breeding and the health of certain dog breeds. This project aims to observe if there is any relationship between the number of litters being registered with the UK Kennel Club and the health risk category the breed falls into. 
+A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
 
-If there is a positive relationship between the number of genetic ailments and popularity, this could raise an issue surrounding more dogs being born with a higher risk of illness, and therefore it could open up discussion surrounding the drivers for owning such dogs and exploring owner knowledge of the breeds and potential health ailments.
-
-If there is a negative relationship between the number of genetic ailments and popularing, this could indicate that knowledge surrounding dog health is widely understood in the public and people are actively considering avoiding owning dogs with certain genetic ailments.
-
-If no relationship is discovered, then it indicates that either:
-* The public have little awareness of genetic ailments in dog breeds; or
-* The public do not hold the possibility of genetic ailments as a strong enough deterrent to buying certain dog breeds.
+A time series forecast model is produced to allow a data-driven business decision to be made.
 
 # Project Summary
 
 ## Question
-Are dogs with more genetic ailments becoming more popular?
+Can a time series model be used to help forecast the price of soup ingredients, and therefore help make the correct decision on which ingredient to buy.
 
 ## Solution
 
@@ -50,10 +44,10 @@ Are dogs with more genetic ailments becoming more popular?
 ## Preparing the data
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
 
-import pandas as pd  
+[import pandas as pd  
 import numpy as np  
 import matplotlib.pyplot as plt  
-import seaborn as sns  
+import seaborn as sns  ]
 
 ## import the datasets and identify
 kc_file = r'C:\Users\HannahFarrell\OneDrive - Greater Manchester GP Federations Toolkit\Desktop\Python\Apprenticeship\Assessments\DPS\kc_breed_registrations (1).csv'  
