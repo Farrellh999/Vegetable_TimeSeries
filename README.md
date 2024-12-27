@@ -1,6 +1,6 @@
 # Data Science Project: Forecasting soup ingredients to assist decision-making for the most cost-effective production of soup.
 
-## Overview
+# Overview
 
 This project uses a publicly available dataset which provides data on the cost of various ingredients, including potatoes ('tatties') and tomatoes ('tommies'), between the years 2013 and 2021.
 
