@@ -50,7 +50,7 @@ The datasets are imported into Jupyter notebooks with the pandas, numpy, and mat
 
 <img width="824" alt="image" src="https://github.com/user-attachments/assets/a6c609b5-b4b5-4606-95e8-f304494d0214" />
 
-## import the datasets and explore
+## Import the datasets and explore
 <img width="570" alt="image" src="https://github.com/user-attachments/assets/fc1c0e88-d8d9-4655-85fe-b572c104ac98" />
 
 <img width="227" alt="image" src="https://github.com/user-attachments/assets/04d6b5ea-2289-473e-be9a-fcd3a4213622" />
