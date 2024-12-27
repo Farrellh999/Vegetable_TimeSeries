@@ -28,7 +28,7 @@ The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agricultu
 
 [Project Summary](#project-summary)
 
-[Data Import & Cleanse](#data-import-cleanse)
+[Data Preparation](#data-preparation)
 
 # Project Background
 A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
@@ -44,8 +44,7 @@ Can a time series model be used to help forecast the price of soup ingredients, 
 
 ## Outcome
 
-# Data Import & Cleanse
-## Preparing the data
+# Data Preparation
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
 
 [import pandas as pd  
