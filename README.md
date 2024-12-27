@@ -63,18 +63,21 @@ There are no null values present and the data types appear accurate.
 ## Plot the time series data
 <img width="551" alt="image" src="https://github.com/user-attachments/assets/100e5467-1f6b-420e-8ca9-227e1018c28f" />
 
-## Remove commas from numerical data and convert to int.64
+## Observe for any trends with rolling mean calculated
+<img width="559" alt="image" src="https://github.com/user-attachments/assets/90302e6f-c2c2-44e0-846b-d71842487f54" />
 
-kc_columns_to_convert = ['2013','2014','2015','2016','2017','2018','2019','2020','2021','2022']  
-kc_data[kc_columns_to_convert] = kc_data[kc_columns_to_convert].replace({',':''},regex=True).astype(int)  
-kc_data.info()  
-![image](https://github.com/user-attachments/assets/b0de7f02-3064-49a1-8cc2-7ac9c6be0676)
+<img width="863" alt="image" src="https://github.com/user-attachments/assets/a2849857-13e6-46ea-a69f-89b9afea9dfa" />
 
-## Check for null values and types of data
-char_data.info()  
-![image](https://github.com/user-attachments/assets/34ebaa08-5ac8-44d3-aa5c-4c07d2d584ce)  
+## Decompose the time series
+<img width="684" alt="image" src="https://github.com/user-attachments/assets/ee6b378a-1b10-4c67-8e5e-f7feaacb7cf5" />
 
+<img width="644" alt="image" src="https://github.com/user-attachments/assets/48a286d8-3342-4c22-9ac2-c7705c896dd3" />
 
+The decomposition demonstrates a long-term increase in the average prices. There are certain points of price acceleration and price deceleration. The seasonal plot appears very flat, indicating there isn't strong seasonal variation. The residual plot doesn't indicate any specific pattern, with fluctuations being scattered and therefore random.
+
+The primary driver for average price of tatties appers to be a general increase over time, with very little impact from seasonsality, not any systematic error.
+
+Following these observations, it would be best to proceed with an ARIMA model.
 
 
 ### Applying Business Logic
