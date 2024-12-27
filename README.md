@@ -56,11 +56,13 @@ The datasets are imported into Jupyter notebooks with the pandas, numpy, and mat
 
 <img width="227" alt="image" src="https://github.com/user-attachments/assets/04d6b5ea-2289-473e-be9a-fcd3a4213622" />
 
-
-
 ## Check for null values and types of data
-<img width="440" alt="image" src="https://github.com/user-attachments/assets/57a04dcd-d6b8-4255-9a05-2b508fb94425" />
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/a335fcd4-3422-47e8-b711-67cb40c77c2e" />
 
+There are no null values present and the data types appear accurate.
+
+## Plot the time series data
+<img width="551" alt="image" src="https://github.com/user-attachments/assets/100e5467-1f6b-420e-8ca9-227e1018c28f" />
 
 ## Remove commas from numerical data and convert to int.64
 
