@@ -49,17 +49,11 @@ Can a time series model be used to help forecast the price of soup ingredients, 
 # Data Preparation
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
 
-[import pandas as pd  
-import numpy as np  
-import matplotlib.pyplot as plt  
-import seaborn as sns  ]
+<img width="824" alt="image" src="https://github.com/user-attachments/assets/a6c609b5-b4b5-4606-95e8-f304494d0214" />
 
 ## import the datasets and identify
-kc_file = r'C:\Users\HannahFarrell\OneDrive - Greater Manchester GP Federations Toolkit\Desktop\Python\Apprenticeship\Assessments\DPS\kc_breed_registrations (1).csv'  
-kc_data = pd.read_csv(kc_file, encoding ='ISO-8859-1')  
+<img width="570" alt="image" src="https://github.com/user-attachments/assets/fc1c0e88-d8d9-4655-85fe-b572c104ac98" />
 
-CHAR_file = r'C:\Users\HannahFarrell\OneDrive - Greater Manchester GP Federations Toolkit\Desktop\Python\Apprenticeship\Assessments\DPS\dog_characteristics.csv'  
-char_data = pd.read_csv(CHAR_file)  
 
 ## Check for null values and types of data
 kc_data.info()  
