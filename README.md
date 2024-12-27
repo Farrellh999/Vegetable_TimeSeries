@@ -33,7 +33,9 @@ The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agricultu
 # Project Background
 A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
 
-A time series forecast model is produced to allow a data-driven business decision to be made.
+Two types of time series models are produced; SARIMA vs Holt-Winters. AIC, BIC, MAE, MSE, and RMSE, in addition to a visual inspection of the models, are all used to assess model accuracy and to decide which model is the most appropriate for implementing.
+
+The chosen model is imported into Power BI and visualisations are produced into a dashboard to imprpve accessibilty to the data and for clear decision making.
 
 # Project Summary
 
