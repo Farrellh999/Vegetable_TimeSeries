@@ -59,10 +59,8 @@ The datasets are imported into Jupyter notebooks with the pandas, numpy, and mat
 
 
 ## Check for null values and types of data
-kc_data.info()  
-![image](https://github.com/user-attachments/assets/a7750b1a-db13-4133-be2c-32ac43c3fc3d)
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/57a04dcd-d6b8-4255-9a05-2b508fb94425" />
 
-The data appears to have imported correctly.  
 
 ## Remove commas from numerical data and convert to int.64
 
