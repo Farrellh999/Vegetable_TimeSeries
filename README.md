@@ -79,6 +79,40 @@ The primary driver for average price of tatties appers to be a general increase 
 
 Following these observations, it would be best to proceed with an ARIMA model.
 
+### Check for outliers by producing a Z score and identifying records with a price 4 SD away from the mean.
+<img width="494" alt="image" src="https://github.com/user-attachments/assets/48a350f3-71bd-499d-bb18-d5d7c502b0d1" />
+
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/c0a59d8d-1ecd-4dd8-b0ba-19ae7639b633" />
+
+### Remove outliers
+
+<img width="634" alt="image" src="https://github.com/user-attachments/assets/b302736b-d4b3-43e4-96f4-8b7018420861" />
+
+### Resample data into monthly increments
+
+<img width="609" alt="image" src="https://github.com/user-attachments/assets/cc50a459-62aa-4799-8f21-e196c7034b16" />
+
+### Plot the monthly data
+<img width="511" alt="image" src="https://github.com/user-attachments/assets/229eca65-6110-4e38-964e-42e619f13728" />
+
+<img width="758" alt="image" src="https://github.com/user-attachments/assets/dbf1925f-fc07-4113-a3b4-f1e63d31527c" />
+
+<img width="296" alt="image" src="https://github.com/user-attachments/assets/eef3a904-59b3-41fa-8c7f-1d6e52edb756" />
+
+### Check the quality of the data
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/4a0629c5-5eef-4ddd-81b1-a5ad8f59dde8" />
+
+### Use the ADF Test to check for stationarity
+<img width="877" alt="image" src="https://github.com/user-attachments/assets/866ea10b-4573-4ee0-a220-16b934d46e0f" />
+
+### Divide the data into a training and a testing set
+
+<img width="587" alt="image" src="https://github.com/user-attachments/assets/0c3f0ad8-9a2e-4bcf-8458-5c9d9326a6ec" />
+
+
+
+
+
 
 ### Applying Business Logic
 
