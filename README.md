@@ -125,6 +125,20 @@ Fit the model with the auto-arima function.
 
 The auto-arima function has detected that there is no seasonality, and the best fitting model has order (p,d,q)(2,0,1) i.e., there autoregressive element and a moving average element.
 
+### Check model fit
+Perform residual analysis
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/b1bdfed9-376c-4737-88c8-590de30e5ac9" />
+<img width="745" alt="image" src="https://github.com/user-attachments/assets/0f726045-93fb-4c76-8e03-8ca8958d9d4e" />
+
+Residual analysis demonstrates that the majority of the residuals are close to zero, indicating a good model fit. The residuals also demonstrate a relatively normal distribution.
+
+Plot ACF residuals
+<img width="497" alt="image" src="https://github.com/user-attachments/assets/45a240d9-2130-4d7b-82b6-9d18494457a3" />
+ACF plot demonstrates no significant correlation.
+
+View the AIC and BIC values
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/9b9d0bfc-de01-403c-92dc-b8ea34c5b1ab" />
+
 
 
 
