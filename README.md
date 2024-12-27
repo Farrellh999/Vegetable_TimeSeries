@@ -109,6 +109,25 @@ Following these observations, it would be best to proceed with an ARIMA model.
 
 <img width="587" alt="image" src="https://github.com/user-attachments/assets/0c3f0ad8-9a2e-4bcf-8458-5c9d9326a6ec" />
 
+<img width="728" alt="image" src="https://github.com/user-attachments/assets/2586e229-26cb-4519-b9ec-d9534f5e435a" />
+
+### Perform the SARIMA model
+Ensure correct libraries are installed.
+<img width="367" alt="image" src="https://github.com/user-attachments/assets/c3f7d7ff-0db3-43fc-b9ca-dbb560e59969" />
+
+Fit the model with the auto-arima function.
+
+<img width="293" alt="image" src="https://github.com/user-attachments/assets/c86f2486-0611-4e4e-8876-656c38692958" />
+
+<img width="433" alt="image" src="https://github.com/user-attachments/assets/52b6fa14-e6e6-41d5-ba92-79dcbba2d029" />
+
+<img width="539" alt="image" src="https://github.com/user-attachments/assets/36cc63eb-1ced-42d5-9059-0cde41785f2a" />
+
+The auto-arima function has detected that there is no seasonality, and the best fitting model has order (p,d,q)(2,0,1) i.e., there autoregressive element and a moving average element.
+
+
+
+
 
 
 
