@@ -139,6 +139,19 @@ ACF plot demonstrates no significant correlation.
 View the AIC and BIC values
 <img width="247" alt="image" src="https://github.com/user-attachments/assets/9b9d0bfc-de01-403c-92dc-b8ea34c5b1ab" />
 
+### Compare Model Results with Actual
+<img width="652" alt="image" src="https://github.com/user-attachments/assets/300a2b1a-9dfa-4e9e-a981-6daa451eb255" />
+
+<img width="785" alt="image" src="https://github.com/user-attachments/assets/b5f30f24-7be6-490d-a0a4-0fe3371a24a6" />
+
+From a visual inspection, the model does reflect the pattern fo the actual data, but it doensn't look particularly accurate.
+
+### Check the forecast accuracy
+
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/5bcff958-9da6-4fc4-b61a-28bb3e915116" />
+
+The mean average percentage error (MAPE) is 29%, indicating a relatively poor fitting model.
+
 
 
 
