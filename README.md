@@ -1,4 +1,4 @@
-# Data Science Project: Forecasting soup ingredients to assist decision-making for the most cost-effective production of soup.
+# Data Science Project: Tommies or Tatties?
 
 # Overview
 
