@@ -4,10 +4,12 @@
 
 This project uses a publicly available dataset which provides data on the cost of various ingredients, including potatoes ('tatties') and tomatoes ('tommies'), between the years 2013 and 2021.
 
-The goal of this project is to explore the use of a time series forecast model as a tool to decide which main ingredient to use (tatties or tommies) for the soup of the week, based on the predicted cost of the two ingredients i.e., whichever ingredient is forecast to be the least expensive for that month will be used and advertised as the 'soup of the day'.
+The goal of this project is to explore the use of a time series forecast model as a tool to decide which main ingredient to use (tatties or tommies) for the soup of the month, based on the predicted cost of the two ingredients.
+
+A SARIMA forecasting model was used to forecast cost of ingredients 12 months ahead. The results were then uploaded to PowerBi to create an interactive dashboard whereby the user can select the purchase month and be advised on which ingredient to buy according to how the forecasted price compared to the average price for that ingredient, and the price of the alternative ingredient.
 
 ### Positive Impact
-The business will be able to hopefully make data-driven business decisions in order to optimise profit.
+The business will be able to make data-driven business decisions in order to optimise profit.
 
 ### Negative Impact
 The forecast may influence the use of a certain ingredient at a time when that ingredient is of poor quality, leading to problems further down the line such as customer disatisfaction, the requirement to use additional ingredients to improve the quality of the soup.
@@ -30,9 +32,13 @@ The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agricultu
 [Data Preparation](#data-preparation)
 
 # Project Background
-A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
+A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on assessing the forecasted price of the the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
 
-Two types of time series models are produced; SARIMA vs Holt-Winters. AIC, BIC, MAE, MSE, and RMSE, in addition to a visual inspection of the models, are all used to assess model accuracy and to decide which model is the most appropriate for implementing.
+Whilst the raw data is daily, it was decided to transform this into monthly data as the original dataset made the python kernel run too slowly.
+
+A time series SARIMA forecasting model is run following data cleansing in python. The auto-arima function uses AIC to detect the best fitting parameters of p,d,q, and P,D,Q using the test dataset. The model is then run on the training dataset and the model accuracy is assessed using r-squared, mean absolute error (MAE), and mean absolute percentage error (MAPE), in addition to a visual inspection.
+
+Once satisfied with the model, the next 12 months are forecast and then merged into the original dataframe, before being exported to a csv file.
 
 The chosen model is imported into Power BI and visualisations are produced into a dashboard to imprpve accessibilty to the data and for clear decision making.
 
