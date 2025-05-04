@@ -54,6 +54,7 @@ Can a SARIMA time-series forecasting model help a chef to make the most cost eff
 # Data Preparation
 The dataset is a publicly available dataset from Kaggle.com that provides daily average/min/max prices/unit data on a variety of vegetables between a large, relatively recent date range (June 2013 and May 2021) in Nepal. The data is well structured and labelled, making interpretation easy. However, it does fail to specify the currency; for this project we choose to use GBP, but this should be explored further before implementing into a real-world scenario. The table headers do not make it abundantly clear that the minimum, maximum, and average are the prices per unit, and this would be important for context.
 
+## Extract Data in Power Query
 Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the target data (tommies and tatties) into separate datasets. Minor transformation were undertaken, such as changing dtype, and the data was grouped by ingredient, date, and summed the total price.
 ![image](https://github.com/user-attachments/assets/af151e56-87b3-48c6-a078-0c8b5b189624)
 ![image](https://github.com/user-attachments/assets/a2964ccb-2f01-490c-a006-c7e659b9412a)
@@ -71,23 +72,14 @@ The datasets are imported into Jupyter notebooks with the pandas, numpy, and mat
 There are no null values present and the data types appear accurate.
 
 ## Plot the time series data
-<img width="551" alt="image" src="https://github.com/user-attachments/assets/100e5467-1f6b-420e-8ca9-227e1018c28f" />
+<![image](https://github.com/user-attachments/assets/749ef627-51eb-4bb6-8fb5-5895ec031c3d)/>
 
-## Observe for any trends with rolling mean calculated
-<img width="559" alt="image" src="https://github.com/user-attachments/assets/90302e6f-c2c2-44e0-846b-d71842487f54" />
+## Perform Seasonal Decomposition using statsmodels
+<![image](https://github.com/user-attachments/assets/c114aa65-ef20-454e-a919-4826011e7ed7)/>
 
-<img width="863" alt="image" src="https://github.com/user-attachments/assets/a2849857-13e6-46ea-a69f-89b9afea9dfa" />
+Seasonality is initially hugely difficult to visualise due to the number of data points. Therefore seasonality between a specific timeframe was performed to 'zoom' into the data.
+<![image](https://github.com/user-attachments/assets/582ca49b-201a-4948-aaa9-76d1d3bbd1ba)/>
 
-## Decompose the time series
-<img width="684" alt="image" src="https://github.com/user-attachments/assets/ee6b378a-1b10-4c67-8e5e-f7feaacb7cf5" />
-
-<img width="644" alt="image" src="https://github.com/user-attachments/assets/48a286d8-3342-4c22-9ac2-c7705c896dd3" />
-
-The decomposition demonstrates a long-term increase in the average prices. There are certain points of price acceleration and price deceleration. The seasonal plot appears very flat, indicating there isn't strong seasonal variation. The residual plot doesn't indicate any specific pattern, with fluctuations being scattered and therefore random.
-
-The primary driver for average price of tatties appers to be a general increase over time, with very little impact from seasonsality, not any systematic error.
-
-Following these observations, it would be best to proceed with an ARIMA model.
 
 ### Check for outliers by producing a Z score and identifying records with a price 4 SD away from the mean.
 <img width="494" alt="image" src="https://github.com/user-attachments/assets/48a350f3-71bd-499d-bb18-d5d7c502b0d1" />
