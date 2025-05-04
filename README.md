@@ -180,6 +180,15 @@ Residual analysis in a residual distribution plot demonstrates that the residual
 ![image](https://github.com/user-attachments/assets/e74266f3-893f-400b-92ef-1a7243937267)
 
 # Forecast Future Values
+### Forecast vales for future dates
+The index is set to the monthly frequency.
+A period of 12 future dates are generated using the test dataset index.
+The forecasted data is then combined with the future dates.
+![image](https://github.com/user-attachments/assets/6263e366-fa7b-46a8-a462-2f09c2942e05)
+![image](https://github.com/user-attachments/assets/2e6bc544-3297-4d79-b715-47d9571a1e1c)
+
+
+
 
 
 
