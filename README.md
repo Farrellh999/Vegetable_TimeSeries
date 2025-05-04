@@ -216,6 +216,7 @@ The process was repeated for the tommies dataset. The key differences were as fo
 
 ### Seasonality
 * seasonality - quarterly - peaks every 12-13 weeks.
+* m = 3
 * ![image](https://github.com/user-attachments/assets/f9efbf32-933e-4c36-a8b9-f2b7afb5c470)
 * Whilst seasonality had been detected as quarterly initially, when this was incorporated into the model, poor results were given
 * ![image](https://github.com/user-attachments/assets/4d3223c1-3d4e-404a-bbe4-8fc361fbc6d8)
@@ -231,7 +232,6 @@ The process was repeated for the tommies dataset. The key differences were as fo
 * ![image](https://github.com/user-attachments/assets/811bc77a-b96a-4224-bd0d-f6510529422a)
 * Whilst still not fantastic, the accuracy metrics were far better and the data visual appear a much better fit
 * ![image](https://github.com/user-attachments/assets/29c25474-d7df-4a29-babf-3e1ed54416e4)
-
 
 
 ### Applying Business Logic
