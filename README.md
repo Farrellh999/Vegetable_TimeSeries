@@ -6,7 +6,7 @@ This project uses a publicly available dataset which provides data on the cost o
 
 The goal of this project is to explore the use of a time series forecast model as a tool to decide which main ingredient to use (tatties or tommies) for the soup of the month, based on the predicted cost of the two ingredients.
 
-A SARIMA forecasting model was used to forecast cost of ingredients 12 months ahead. The results were then uploaded to PowerBi to create an interactive dashboard whereby the user can select the purchase month and be advised on which ingredient to buy according to how the forecasted price compared to the average price for that ingredient, and the price of the alternative ingredient.
+A SARIMA forecasting model was used to forecast cost of ingredients 12 months ahead. The results were then uploaded to PowerBI to create an interactive dashboard whereby the end-user can select the purchase month and be advised on which ingredient to buy according to how the forecasted price compared to the average price for that ingredient, and the price of the alternative ingredient.
 
 ### Positive Impact
 The business will be able to make data-driven business decisions in order to optimise profit.
@@ -45,13 +45,20 @@ The chosen model is imported into Power BI where custom measures are produced an
 # Project Summary
 
 ## Question
-Can a time series model be used to help forecast the price of soup ingredients, and therefore help make the correct decision on which ingredient to buy.
+Can a SARIMA time-series forecasting model help a chef to make the most cost effective decision when deciding on which soup to make and what main ingredient to buy?
 
 ## Solution
 
 ## Outcome
 
 # Data Preparation
+The dataset is a publicly available dataset from Kaggle.com that provides daily average/min/max prices/unit data on a variety of vegetables between a large, relatively recent date range (June 2013 and May 2021) in Nepal. The data is well structured and labelled, making interpretation easy. However, it does fail to specify the currency; for this project we choose to use GBP, but this should be explored further before implementing into a real-world scenario. The table headers do not make it abundantly clear that the minimum, maximum, and average are the prices per unit, and this would be important for context.
+
+Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the target data (tommies and tatties) into separate datasets. Minor transformation were undertaken, such as changing dtype, and the data was grouped by ingredient, date, and summed the total price (figures 1 + 2).
+![image](https://github.com/user-attachments/assets/af151e56-87b3-48c6-a078-0c8b5b189624)
+![image](https://github.com/user-attachments/assets/a2964ccb-2f01-490c-a006-c7e659b9412a)
+
+
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
 
 <img width="824" alt="image" src="https://github.com/user-attachments/assets/a6c609b5-b4b5-4606-95e8-f304494d0214" />
