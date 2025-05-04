@@ -62,23 +62,29 @@ Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the t
 
 ## Load chosen libraries
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
-<![image](https://github.com/user-attachments/assets/0ce50dea-0a0f-4670-9434-250a6df08f2f)/>
+![image](https://github.com/user-attachments/assets/0ce50dea-0a0f-4670-9434-250a6df08f2f)
 
 ## Import the datasets and explore
-<![image](https://github.com/user-attachments/assets/f4908683-2637-4a9d-9390-c7adbadcdb05)/>
+![image](https://github.com/user-attachments/assets/f4908683-2637-4a9d-9390-c7adbadcdb05)
 
 ## Check for null values and types of data
-<![image](https://github.com/user-attachments/assets/bd7cb94c-5060-472f-a472-75c98a16019b)/>
+![image](https://github.com/user-attachments/assets/bd7cb94c-5060-472f-a472-75c98a16019b)
 There are no null values present and the data types appear accurate.
 
 ## Plot the time series data
-<![image](https://github.com/user-attachments/assets/749ef627-51eb-4bb6-8fb5-5895ec031c3d)/>
+![image](https://github.com/user-attachments/assets/749ef627-51eb-4bb6-8fb5-5895ec031c3d)
 
 ## Perform Seasonal Decomposition using statsmodels
-<![image](https://github.com/user-attachments/assets/c114aa65-ef20-454e-a919-4826011e7ed7)/>
+![image](https://github.com/user-attachments/assets/c114aa65-ef20-454e-a919-4826011e7ed7)
+The trend demonstrated peaks and troughs over the course of each year, with a very slight upwards trend, and a significant spike between 2020 and 2021 (most likely due to the Covid-19 pandemic impacting the economy).
+
+Residuals appear to be scattered at random, close to zero, indicating that trend and seasonality are responsible for the majority of variation of the data.
 
 Seasonality is initially hugely difficult to visualise due to the number of data points. Therefore seasonality between a specific timeframe was performed to 'zoom' into the data.
-<![image](https://github.com/user-attachments/assets/582ca49b-201a-4948-aaa9-76d1d3bbd1ba)/>
+![image](https://github.com/user-attachments/assets/582ca49b-201a-4948-aaa9-76d1d3bbd1ba)
+
+The seasonality appears to have four major peaks each year, indicating quarterly seasonality. Consequently, we can be confident in proceeding with an ARIMA model.
+
 
 
 ### Check for outliers by producing a Z score and identifying records with a price 4 SD away from the mean.
