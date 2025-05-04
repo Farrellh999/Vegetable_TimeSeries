@@ -1,5 +1,5 @@
 <nav>
-  <ul style="list-style: none; display: flex; gap: 1em;">
+  <ul style="list-style: minimal; display: flex; gap: 1em;">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
     <li><a href="{{ site.baseurl }}/Introduction">Introduction</a></li>
     <li><a href="{{ site.baseurl }}/Project-Background">Project Background</a></li>
