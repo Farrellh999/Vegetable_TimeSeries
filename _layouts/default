@@ -1,3 +1,9 @@
-<header>
-  {% include header.html %}
-</header>
+{% if page.sidebar_menu %}
+  <nav class="sidebar">
+    <ul>
+      {% for item in page.sidebar_menu %}
+        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
