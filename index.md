@@ -6,7 +6,7 @@ title: Home
 
 This is the homepage of my multi-page site.
 
-[Go to Home](Homepage.html)
+[Introduction](Homepage.html)
 
 [See the Project Background](Project%20Background.html)
 
