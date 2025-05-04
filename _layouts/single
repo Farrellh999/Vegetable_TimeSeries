@@ -1,1 +1,13 @@
+---
+# This layout wraps around the page's content for single page display
+layout: default
+---
+
+{% include header.html %}
+
+<div class="content">
+  {{ content }}
+</div>
+
+{% include footer.html %}
 
