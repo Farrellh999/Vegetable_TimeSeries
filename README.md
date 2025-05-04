@@ -94,6 +94,10 @@ There appears to be a large number of outliers (62), comprising 2.25% of the dat
 
 Upon further inspection, it is clear that these outliers appear to fall during the Covid-19 panemic; as this was a significant and very real life event, it is important that we do not remove these outliers, but instead acknowledge them.
 
+### Drop unnecessary columns
+![image](https://github.com/user-attachments/assets/b8556ce7-868d-4d12-a0bf-b38e26768db1)
+
+### Assess stationarity using the Augmented Dickey-Fuller test
 
 ### Resample data into monthly increments
 
