@@ -1,5 +1,10 @@
-/* Adjust logo size */
-img[src='/images/logo.png'] {
-  width: 50px;
+body {
+  font-family: Arial, sans-serif;
+}
+
+.site-logo {
+  width: 150px;
   height: auto;
+  display: block;
+  margin-bottom: 10px;
 }
