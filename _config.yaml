@@ -2,5 +2,4 @@ title: Data Science Portfolio
 logo: /images/logo.png
 description: Data Queen // Senior Analyst // Degree Apprentice
 show_downloads: True
-theme: jekyll-theme-cayman
-# Add this line:
+theme: jekyll-theme-architect
