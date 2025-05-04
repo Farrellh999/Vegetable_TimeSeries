@@ -86,15 +86,14 @@ Seasonality is initially hugely difficult to visualise due to the number of data
 The seasonality appears to have four major peaks each year, indicating quarterly seasonality. Consequently, we can be confident in proceeding with an ARIMA model.
 
 
+### Check for outliers by producing a Z score and identifying records with an average price 3 SDs away from the mean
+![image](https://github.com/user-attachments/assets/7f2533b1-bc6c-492c-be58-dd52c42216b3)
 
-### Check for outliers by producing a Z score and identifying records with a price 4 SD away from the mean.
-<img width="494" alt="image" src="https://github.com/user-attachments/assets/48a350f3-71bd-499d-bb18-d5d7c502b0d1" />
+There appears to be a large number of outliers (62), comprising 2.25% of the dataset. Consequently, these are observed in a summary table.
+![image](https://github.com/user-attachments/assets/38459d33-a5c2-4f18-b616-d3ff81577319)
 
-<img width="374" alt="image" src="https://github.com/user-attachments/assets/c0a59d8d-1ecd-4dd8-b0ba-19ae7639b633" />
+Upon further inspection, it is clear that these outliers appear to fall during the Covid-19 panemic; as this was a significant and very real life event, it is important that we do not remove these outliers, but instead acknowledge them.
 
-### Remove outliers
-
-<img width="634" alt="image" src="https://github.com/user-attachments/assets/b302736b-d4b3-43e4-96f4-8b7018420861" />
 
 ### Resample data into monthly increments
 
