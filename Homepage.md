@@ -22,3 +22,7 @@ The business will be able to make data-driven business decisions in order to opt
 The forecast may influence the use of a certain ingredient at a time when that ingredient is of poor quality, leading to problems further down the line such as customer disatisfaction, the requirement to use additional ingredients to improve the quality of the soup.
 
 ## Conclusion
+## Bibliography
+
+# Data Sources
+The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agriculture-vegetables-fruits-time-series-prices?resource=download]. This a public dataset, readily available to download to anyone who has a free Kaggle account.
