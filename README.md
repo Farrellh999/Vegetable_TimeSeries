@@ -54,7 +54,7 @@ Can a SARIMA time-series forecasting model help a chef to make the most cost eff
 # Data Preparation
 The dataset is a publicly available dataset from Kaggle.com that provides daily average/min/max prices/unit data on a variety of vegetables between a large, relatively recent date range (June 2013 and May 2021) in Nepal. The data is well structured and labelled, making interpretation easy. However, it does fail to specify the currency; for this project we choose to use GBP, but this should be explored further before implementing into a real-world scenario. The table headers do not make it abundantly clear that the minimum, maximum, and average are the prices per unit, and this would be important for context.
 
-Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the target data (tommies and tatties) into separate datasets. Minor transformation were undertaken, such as changing dtype, and the data was grouped by ingredient, date, and summed the total price (figures 1 + 2).
+Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the target data (tommies and tatties) into separate datasets. Minor transformation were undertaken, such as changing dtype, and the data was grouped by ingredient, date, and summed the total price.
 ![image](https://github.com/user-attachments/assets/af151e56-87b3-48c6-a078-0c8b5b189624)
 ![image](https://github.com/user-attachments/assets/a2964ccb-2f01-490c-a006-c7e659b9412a)
 
