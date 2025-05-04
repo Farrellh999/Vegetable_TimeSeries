@@ -4,9 +4,5 @@ description: Data Queen // Senior Analyst
 show_downloads: True
 baseurl: "/Vegetable_TimeSeries"
 theme: jekyll-theme-minimal
-
-plugins:
-  - jekyll-relative-links
-relative_links:
+siderbar:
   enabled: true
-  collections: true
