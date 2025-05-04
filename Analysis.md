@@ -1,7 +1,6 @@
 ---
 title: Analysis
 layout: default
-permalink: /Analysis/
 ---
 
 # Analysis
