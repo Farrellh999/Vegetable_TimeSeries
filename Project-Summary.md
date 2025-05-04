@@ -1,7 +1,6 @@
 ---
 title: Project Summary
 layout: default
-nav_order: 3
 ---
 # Project Summary
 
