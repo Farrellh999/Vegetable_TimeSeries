@@ -8,7 +8,7 @@ This is the homepage of my multi-page site.
 
 [Introduction](Introduction.html)
 
-[See the Project Background](Project-Background.html)
+[Project Background](Project-Background.html)
 
 [Project Summary](Project-Summary.html)
 
