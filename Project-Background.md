@@ -1,7 +1,6 @@
 ---
 title: Project Background
 layout: default
-nav_order: 2
 ---
 
 # Project Background
