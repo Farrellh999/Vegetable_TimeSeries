@@ -105,6 +105,70 @@ Stationarity is confirmed and therefore no differencing is required.
 Previous attempts at running the model on daily data had proved to make my computer crash! I higher spec computer is needed, but we settle at this stage for adjusting to monthly data, using teh average value.
 ![image](https://github.com/user-attachments/assets/a18c20f9-620d-40c9-af57-5b0f87e03a6d)
 
+### Perform seasonal decomposition on the monthly data
+
+![image](https://github.com/user-attachments/assets/07540150-b2fa-4eb5-b83b-e94fbe0b6a93)
+The monthly data illustrates a major peak every 12 months, indicating that seasonlity is 12.
+
+### Produce ACF and PACF charts to assess pdq,PDQ
+![image](https://github.com/user-attachments/assets/9c7ebf67-9ba6-4868-90f5-fd3ee07b4681)
+
+ACF demonstrates a sinusoidal wave indicating seasonality and potentially an AR component. 
+The PACF has significant peaks at lags 1, 2, 5, 9, 14, indicating strong seasonality.
+
+### Check stationarity of the monthly data
+![image](https://github.com/user-attachments/assets/4ab70b99-fc0a-438c-a477-2269ddb3258e)
+The monthly data is confirmed as non-stationary. Therefore we could proceed with differencing manually, however as we are using the auto-arima function, we will make a note to set d as 1.
+
+### Split data into training and testing data sets
+![image](https://github.com/user-attachments/assets/d462af23-c9fc-4952-a3b8-1c3cbd0c3898)
+![image](https://github.com/user-attachments/assets/bfa2d0f3-fc36-48b0-afe6-c2587038e8e0)
+
+# Analysis: Run the ARIMA model
+### Import the necessary libraries
+![image](https://github.com/user-attachments/assets/c373dc90-ac2e-4182-8a89-0b6185e38922)
+The auto_arima function is imported from pmdarima. This will automatically detect values for (p,d,q)(P,D,Q).
+
+### Fit the model
+![image](https://github.com/user-attachments/assets/9716c8c3-461e-4c75-8fe5-9944a024c8ec)
+Seasonality is stated as 'True' and defined as every 12 months (m). Differencing is explicitly defined as 1 to start with.
+Trace is set to 'True' so a detailed record of each model attempt is produced.
+Warnings are suppressed to produce a cleaner output.
+Stepwise is set to 'False' in order to improve the chances of producing a better fitting model
+n_jobs = -1 is incorporated to allow for parallel processing using mutliple CPU code, to speed up the model.
+
+![image](https://github.com/user-attachments/assets/58486873-b292-4216-b513-d98b80003393)
+The returned model is ARIMA(0,1,1)(2,1,0)[12]
+
+### Predict values and plot against Test data
+
+![image](https://github.com/user-attachments/assets/19a588df-68fc-4113-9047-8b3cae3f7380)
+![image](https://github.com/user-attachments/assets/078c9fc4-7d24-4e22-90c4-aed0f96a0520)
+The visual shows that the predicted values appear to follow the testing data fairly well. However accuracy metrics are required to further assess this.
+
+### Test Accuracy
+![image](https://github.com/user-attachments/assets/677df5ce-54cb-4195-bd35-1e3b789798fc)
+An R-squared of 0.41 indicates that the model fits fairly well. The model explains 41% of the variance in the data.
+The mean absolute error (MAE) of 11.02 implies that there is a low magnitude of error.
+The mean absolute percentage error (MAPE) of 19.28 indicates that predictions will be off by approximately 20%. 
+In summary, the model is fitting ok, however we can look to improve it.
+
+### Iterate the model fitting (1)
+We can try to remove the specified differencing to allow the auto_arima to automatically detect this and assess how this performs.
+
+![image](https://github.com/user-attachments/assets/85bc3cd2-bf8e-405a-b562-7a4970516989)
+![image](https://github.com/user-attachments/assets/8896e4e6-49a9-4226-8b51-82d2ebb8d66b)
+![image](https://github.com/user-attachments/assets/aa2ded90-30cb-406d-8db0-831833087303)
+![image](https://github.com/user-attachments/assets/cebd056d-da93-4f40-8559-4b9d18419924)
+![image](https://github.com/user-attachments/assets/5b91ebaf-b9ed-49b8-8213-5a0c8b91aa0a)
+
+Allowing auto_arima to automatically detect differencing has produced a less accurate model:
+MSE = 15 --> higher magnitude of error
+MAPE = 26 --> predictions are off by a higher %
+
+### Iterate the model fitting (2)
+Let's try specifying the differencing as 2.
+
 
 
 
