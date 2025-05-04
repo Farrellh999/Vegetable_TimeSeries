@@ -1,6 +1,25 @@
 ---
 title: Introduction
 layout: default
+sidebar_menu:
+  - title: Introduction
+    url: "/Introduction"
+  - title: Project Background
+    url: "/Project-Background"
+  - title: Project Summary
+    url: "/Project-Summary"
+  - title: Data Preparation
+    url: "/Data-Preparation"
+  - title: Analysis
+    url: "/Analysis"
+  - title: Dashboard
+    url: "/Dashboard"
+  - title: Business Impact
+    url: "/Business-Impact"
+  - title: Conclusion
+    url: "/Conclusion"
+  - title: References
+    url: "/References"
 ---
 
 # Introduction
