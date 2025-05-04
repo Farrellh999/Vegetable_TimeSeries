@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/Home">Home</a></li>
-        <li><a href="{{ site.baseurl }}/Introduction">Introduction</a></li>
-        <li><a href="{{ site.baseurl }}/Project-Background">Project Background</a></li>
-        <li><a href="{{ site.baseurl }}/Project-Summary">Project Summary</a></li>
-        <li><a href="{{ site.baseurl }}/Data-Preparation">Data Preparation</a></li>
-        <li><a href="{{ site.baseurl }}/Analysis">Analysis</a></li>
-        <li><a href="{{ site.baseurl }}/Dashboard">Dashboard</a></li>
-        <li><a href="{{ site.baseurl }}/Business-Impact">Business Impact</a></li>
-        <li><a href="{{ site.baseurl }}/Conclusion">Conclusion</a></li>
-        <li><a href="{{ site.baseurl }}/References">References</a></li>
-      </ul>
-    </nav>
-  </header>
+---
+# This layout wraps around the theme's default layout
+layout: minimal
+---
 
-  <main>
-    {{ content }}
-  </main>
+{% include header.html %}
 
-  <footer>
-    <p>© 2025 Vegetable Time Series</p>
-  </footer>
-</body>
-</html>
+{{ content }}
