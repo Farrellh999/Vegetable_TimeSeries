@@ -3,3 +3,4 @@ logo: assets/images/logo.png
 description: Data Queen // Senior Analyst
 show_downloads: False
 theme: jekyll-theme-slate
+baseurl: "/Vegetable_TimeSeries"
