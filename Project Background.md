@@ -1,6 +1,9 @@
+---
 title: Project Background
 layout: default
 nav_order: 2
+---
+
 # Project Background
 A chef must decide what the 'soup of the day' will be for the following month, ready to advertise to customers, based on the price of the main ingredient. This project focuses on assessing the forecasted price of the the two main ingredients potatoes ('tatties') and tomatoes ('tommies').
 
