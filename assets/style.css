@@ -1,5 +1,5 @@
 /* Adjust logo size */
-img[src='/assets/images/logo.png'] {
+img[src='/images/logo.png'] {
   width: 50px;
   height: auto;
 }
