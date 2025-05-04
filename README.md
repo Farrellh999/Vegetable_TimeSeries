@@ -1,10 +1,3 @@
-<div style="background-color: #e0f7fa; padding: 20px; border-radius: 8px; text-align: center;">
-  <img src="/assets/logo.png" alt="Logo" style="max-height: 100px;"><br>
-  <h1>Data Science Portfolio</h1>
-  <p>Data Queen // Senior Analyst // Degree Apprentice</p>
-</div>
-
-
 # Data Science Project: Tommies or Tatties?
 
 # Overview
