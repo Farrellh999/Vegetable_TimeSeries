@@ -3,10 +3,3 @@ logo: /images/logo.png
 description: Data Queen // Senior Analyst
 show_downloads: True
 theme: jekyll-theme-minimal
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-sass:
-  style: compressed
