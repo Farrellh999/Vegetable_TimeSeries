@@ -2,8 +2,6 @@ title: Data Science Portfolio
 logo: assets/logo.png
 description: Data Queen // Senior Analyst
 show_downloads: True
-author_profile: true
-
 baseurl: "/Vegetable_TimeSeries"
 theme: jekyll-theme-minimal
 
@@ -12,15 +10,3 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-
-# Optional: These files will be included by default, no need to list them here
-# include:
-#   - Introduction.md
-#   - Project-Background.md
-#   - Project-Summary.md
-#   - Data-Preparation.md
-#   - Analysis.md
-#   - Dashboard.md
-#   - Business-Impact.md
-#   - Conclusion.md
-#   - References.md
