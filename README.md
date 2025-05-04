@@ -97,71 +97,15 @@ Upon further inspection, it is clear that these outliers appear to fall during t
 ### Drop unnecessary columns
 ![image](https://github.com/user-attachments/assets/b8556ce7-868d-4d12-a0bf-b38e26768db1)
 
-### Assess stationarity using the Augmented Dickey-Fuller test
+### Assess stationarity using the Augmented Dickey-Fuller test from statsmodels
+![image](https://github.com/user-attachments/assets/94eb3647-e839-4f75-8450-966cc038dd1d)
+Stationarity is confirmed and therefore no differencing is required.
 
 ### Resample data into monthly increments
+Previous attempts at running the model on daily data had proved to make my computer crash! I higher spec computer is needed, but we settle at this stage for adjusting to monthly data, using teh average value.
+![image](https://github.com/user-attachments/assets/a18c20f9-620d-40c9-af57-5b0f87e03a6d)
 
-<img width="609" alt="image" src="https://github.com/user-attachments/assets/cc50a459-62aa-4799-8f21-e196c7034b16" />
 
-### Plot the monthly data
-<img width="511" alt="image" src="https://github.com/user-attachments/assets/229eca65-6110-4e38-964e-42e619f13728" />
-
-<img width="758" alt="image" src="https://github.com/user-attachments/assets/dbf1925f-fc07-4113-a3b4-f1e63d31527c" />
-
-<img width="296" alt="image" src="https://github.com/user-attachments/assets/eef3a904-59b3-41fa-8c7f-1d6e52edb756" />
-
-### Check the quality of the data
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/4a0629c5-5eef-4ddd-81b1-a5ad8f59dde8" />
-
-### Use the ADF Test to check for stationarity
-<img width="877" alt="image" src="https://github.com/user-attachments/assets/866ea10b-4573-4ee0-a220-16b934d46e0f" />
-
-### Divide the data into a training and a testing set
-
-<img width="587" alt="image" src="https://github.com/user-attachments/assets/0c3f0ad8-9a2e-4bcf-8458-5c9d9326a6ec" />
-
-<img width="728" alt="image" src="https://github.com/user-attachments/assets/2586e229-26cb-4519-b9ec-d9534f5e435a" />
-
-### Perform the SARIMA model
-Ensure correct libraries are installed.
-<img width="367" alt="image" src="https://github.com/user-attachments/assets/c3f7d7ff-0db3-43fc-b9ca-dbb560e59969" />
-
-Fit the model with the auto-arima function.
-
-<img width="293" alt="image" src="https://github.com/user-attachments/assets/c86f2486-0611-4e4e-8876-656c38692958" />
-
-<img width="433" alt="image" src="https://github.com/user-attachments/assets/52b6fa14-e6e6-41d5-ba92-79dcbba2d029" />
-
-<img width="539" alt="image" src="https://github.com/user-attachments/assets/36cc63eb-1ced-42d5-9059-0cde41785f2a" />
-
-The auto-arima function has detected that there is no seasonality, and the best fitting model has order (p,d,q)(2,0,1) i.e., there autoregressive element and a moving average element.
-
-### Check model fit
-Perform residual analysis
-<img width="344" alt="image" src="https://github.com/user-attachments/assets/b1bdfed9-376c-4737-88c8-590de30e5ac9" />
-<img width="745" alt="image" src="https://github.com/user-attachments/assets/0f726045-93fb-4c76-8e03-8ca8958d9d4e" />
-
-Residual analysis demonstrates that the majority of the residuals are close to zero, indicating a good model fit. The residuals also demonstrate a relatively normal distribution.
-
-Plot ACF residuals
-<img width="497" alt="image" src="https://github.com/user-attachments/assets/45a240d9-2130-4d7b-82b6-9d18494457a3" />
-ACF plot demonstrates no significant correlation.
-
-View the AIC and BIC values
-<img width="247" alt="image" src="https://github.com/user-attachments/assets/9b9d0bfc-de01-403c-92dc-b8ea34c5b1ab" />
-
-### Compare Model Results with Actual
-<img width="652" alt="image" src="https://github.com/user-attachments/assets/300a2b1a-9dfa-4e9e-a981-6daa451eb255" />
-
-<img width="785" alt="image" src="https://github.com/user-attachments/assets/b5f30f24-7be6-490d-a0a4-0fe3371a24a6" />
-
-From a visual inspection, the model does reflect the pattern fo the actual data, but it doensn't look particularly accurate.
-
-### Check the forecast accuracy
-
-<img width="521" alt="image" src="https://github.com/user-attachments/assets/5bcff958-9da6-4fc4-b61a-28bb3e915116" />
-
-The mean average percentage error (MAPE) is 29%, indicating a relatively poor fitting model.
 
 
 
