@@ -3,7 +3,8 @@ title: Analysis
 layout: default
 ---
 
-# Analysis: Run the ARIMA model
+# Analysis
+##Run the ARIMA model
 ### Import the necessary libraries
 ![image](https://github.com/user-attachments/assets/c373dc90-ac2e-4182-8a89-0b6185e38922)
 The auto_arima function is imported from pmdarima. This will automatically detect values for (p,d,q)(P,D,Q).
