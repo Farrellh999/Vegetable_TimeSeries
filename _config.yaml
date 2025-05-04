@@ -4,5 +4,3 @@ description: Data Queen // Senior Analyst // Degree Apprentice
 show_downloads: True
 theme: jekyll-theme-minimal
 # Add this line:
-plugins:
-  - jekyll-include-cache
