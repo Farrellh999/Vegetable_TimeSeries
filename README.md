@@ -201,39 +201,39 @@ The dataframe containing forecasted values is merged on the indices with the mon
 
 # Repeat the Process for Tommies Data
 The process was repeated for the tommies dataset. The key differences were as follows:
+
+### Outliers
 * Outliers were identified to be a minimal number of values and were therefore removed
-* seasonality - quarterly - peaks every 12-13 weeks.
-* ![image](https://github.com/user-attachments/assets/f9efbf32-933e-4c36-a8b9-f2b7afb5c470)
-  
+
+### PACF
 * PACF ony had significant peaks at lags 1, 4, and 8
 * ![image](https://github.com/user-attachments/assets/47c4ba2d-aa50-49f3-b936-ce0979ba05fd)
-  
+
+### Stationarity
 * ADF confirmed the monthly data to be stationary so differencing was not required
 * ![image](https://github.com/user-attachments/assets/54bb1c1a-2c86-4cb6-b14b-baee456cbfba)
 * However, upon running the model, it produced a better fit if D=1
-  
+
+### Seasonality
+* seasonality - quarterly - peaks every 12-13 weeks.
+* ![image](https://github.com/user-attachments/assets/f9efbf32-933e-4c36-a8b9-f2b7afb5c470)
 * Whilst seasonality had been detected as quarterly initially, when this was incorporated into the model, poor results were given
 * ![image](https://github.com/user-attachments/assets/4d3223c1-3d4e-404a-bbe4-8fc361fbc6d8)
 
 
 * Therefore, bi-annual seasonality and annual seasonality were attempted to assess if these were stronger trends.
-* ### Bi-Annual
+### Bi-Annual
 * m = 6
 * Accuracy metrics were poor still
 * ![image](https://github.com/user-attachments/assets/826f7f86-bd7b-4494-9cf1-e31daae2ea62)
 
  
-* ### Annual
+### Annual
 * m = 12
 * ![image](https://github.com/user-attachments/assets/811bc77a-b96a-4224-bd0d-f6510529422a)
 * Whilst still not fantastic, the accuracy metrics were far better and the data visual appear a much better fit
 * ![image](https://github.com/user-attachments/assets/29c25474-d7df-4a29-babf-3e1ed54416e4)
 
-
-
-
-
-* 
 
 
 
