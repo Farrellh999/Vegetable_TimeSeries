@@ -220,25 +220,17 @@ The process was repeated for the tommies dataset. The key differences were as fo
 * Whilst seasonality had been detected as quarterly initially, when this was incorporated into the model, poor results were given
 * ![image](https://github.com/user-attachments/assets/4d3223c1-3d4e-404a-bbe4-8fc361fbc6d8)
 
-
 * Therefore, bi-annual seasonality and annual seasonality were attempted to assess if these were stronger trends.
 ### Bi-Annual
 * m = 6
 * Accuracy metrics were poor still
 * ![image](https://github.com/user-attachments/assets/826f7f86-bd7b-4494-9cf1-e31daae2ea62)
 
- 
-### Annual
+ ### Annual
 * m = 12
 * ![image](https://github.com/user-attachments/assets/811bc77a-b96a-4224-bd0d-f6510529422a)
 * Whilst still not fantastic, the accuracy metrics were far better and the data visual appear a much better fit
 * ![image](https://github.com/user-attachments/assets/29c25474-d7df-4a29-babf-3e1ed54416e4)
-
-
-
-
-
-
 
 
 
