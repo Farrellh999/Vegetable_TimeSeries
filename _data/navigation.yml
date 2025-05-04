@@ -1,29 +1,18 @@
-- title: Home
-  url: /
-
 - title: Introduction
-   url: /Introduction
-
+  url: "/Introduction"
 - title: Project Background
-   url: /Project-Background
-
+  url: "/Project-Background"
 - title: Project Summary
-   url: /Project-Summary
-
+  url: "/Project-Summary"
 - title: Data Preparation
-  url: /Data-Preparation
-
+  url: "/Data-Preparation"
 - title: Analysis
-   url: /Analysis
-
+  url: "/Analysis"
 - title: Dashboard
-  url: /Dashboard
-
+  url: "/Dashboard"
 - title: Business Impact
-   url: /Business-Impact
-
+  url: "/Business-Impact"
 - title: Conclusion
-  url: /Conclusion
-
+  url: "/Conclusion"
 - title: References
-  url: /References
+  url: "/References"
