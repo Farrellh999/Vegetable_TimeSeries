@@ -1,6 +1,6 @@
 ---
 title: Introduction
-layout: default
+layout: single
 sidebar_menu:
   - title: Introduction
     url: "/Introduction"
