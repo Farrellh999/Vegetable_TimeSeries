@@ -167,7 +167,25 @@ MSE = 15 --> higher magnitude of error
 MAPE = 26 --> predictions are off by a higher %
 
 ### Iterate the model fitting (2)
-Let's try specifying the differencing as 2.
+As the PACF has significant peaks at lags 1, 2, 5, and 9 this could indicate that values could be strongly affected by values from 2 months ago. We can test changing seasonality to  2 i.e. m=2.
+
+The produced the following chart which clearly identifies it is a very poorly fitting model.
+![image](https://github.com/user-attachments/assets/c3b5c290-981d-4086-8898-5ebff674a1b0)
+
+Therefore, we revert to using the model ARIMA(0,1,1)(2,1,0)[12].
+
+### Residual Analysis
+Residual analysis in a residual distribution plot demonstrates that the residuals are normally distributed. This indicates that the assumptions made by he model are valid.
+![image](https://github.com/user-attachments/assets/2b8b1807-d810-4584-8cb8-19b773adc89d)
+![image](https://github.com/user-attachments/assets/e74266f3-893f-400b-92ef-1a7243937267)
+
+# Forecast Future Values
+
+
+
+
+
+
 
 
 
