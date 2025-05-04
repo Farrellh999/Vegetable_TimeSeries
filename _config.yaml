@@ -2,6 +2,7 @@ title: Data Science Portfolio
 logo: assets/logo.png
 description: Data Queen // Senior Analyst
 show_downloads: True
+author_profile: true
 
 baseurl: "/Vegetable_TimeSeries"
 theme: jekyll-theme-minimal
