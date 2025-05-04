@@ -59,18 +59,15 @@ Prior to uploading to the Jupyter Notebook, PowerQuery was used to extract the t
 ![image](https://github.com/user-attachments/assets/a2964ccb-2f01-490c-a006-c7e659b9412a)
 
 
+## Load chosen libraries
 The datasets are imported into Jupyter notebooks with the pandas, numpy, and matplotlib libraries imported.
-
-<img width="824" alt="image" src="https://github.com/user-attachments/assets/a6c609b5-b4b5-4606-95e8-f304494d0214" />
+<![image](https://github.com/user-attachments/assets/0ce50dea-0a0f-4670-9434-250a6df08f2f)/>
 
 ## Import the datasets and explore
-<img width="570" alt="image" src="https://github.com/user-attachments/assets/fc1c0e88-d8d9-4655-85fe-b572c104ac98" />
-
-<img width="227" alt="image" src="https://github.com/user-attachments/assets/04d6b5ea-2289-473e-be9a-fcd3a4213622" />
+<![image](https://github.com/user-attachments/assets/f4908683-2637-4a9d-9390-c7adbadcdb05)/>
 
 ## Check for null values and types of data
-<img width="422" alt="image" src="https://github.com/user-attachments/assets/a335fcd4-3422-47e8-b711-67cb40c77c2e" />
-
+<![image](https://github.com/user-attachments/assets/bd7cb94c-5060-472f-a472-75c98a16019b)/>
 There are no null values present and the data types appear accurate.
 
 ## Plot the time series data
