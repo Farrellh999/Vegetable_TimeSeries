@@ -1,7 +1,6 @@
 ---
 title: Analysis
 layout: default
-nav_order: 5
 ---
 
 # Analysis: Run the ARIMA model
