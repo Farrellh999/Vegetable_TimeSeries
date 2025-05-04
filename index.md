@@ -4,7 +4,9 @@ title: Home
 ---
 # Welcome
 
-This is the homepage of my multi-page site.
+Welcome to the homepage for my project: "Tatties or Tommies?"
+
+The pages below take you through my journey of explore a dataset, running time-series forecasting, and producing a PowerBI dashboard to help a chef choose which soup to make: tommies or tatties!
 
 [Introduction](Introduction.html)
 
