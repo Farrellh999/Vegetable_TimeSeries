@@ -27,6 +27,6 @@ The forecast may influence the use of a certain ingredient at a time when that i
 # Data Sources
 The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agriculture-vegetables-fruits-time-series-prices?resource=download]. This a public dataset, readily available to download to anyone who has a free Kaggle account.
 
-[➡️ Next: Project Background]({{site.baseurl}}/Project-Background) • 
+[➡️ Next: Project Background]({{site.baseurl}}/Project-Background)
 
 [🏠 Return to Homepage]({{site.baseurl}}/index)
