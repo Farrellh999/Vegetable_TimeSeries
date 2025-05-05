@@ -37,5 +37,6 @@ The chosen model is imported into Power BI where custom measures are produced an
 
 [Next: Project Summary]({{site.baseurl}}/Project-Summary)
 
-[Or return to Homepage]({{site.baseurl}}/index)
+[Back]({{site.baseurl}}/Introduction)
 
+[Return to Homepage]({{site.baseurl}}/index)
