@@ -11,7 +11,7 @@ With this tool, the individuals are able to forecast future costs and make decis
 * Ability to purchase cost efficiently
 * Increased customer interest through well-planned, timely marketing
 
-[➡️ Next: Conclusion]({{site.baseurl}}/Conclusion)
+[➡️ Next: Conclusion & Recommendations]({{site.baseurl}}/Conclusion-Recommendations)
 
 [⬅️ Back]({{site.baseurl}}/Dashboard)
 
