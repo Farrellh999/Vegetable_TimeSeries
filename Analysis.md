@@ -6,10 +6,12 @@ layout: default
 
 # Analysis - Run the ARIMA model
 ### 1) Import the necessary libraries
+
 ![image](https://github.com/user-attachments/assets/c373dc90-ac2e-4182-8a89-0b6185e38922)
 The auto_arima function is imported from pmdarima. This will automatically detect values for (p,d,q)(P,D,Q).
 
 ### 2) Fit the model
+
 ![image](https://github.com/user-attachments/assets/9716c8c3-461e-4c75-8fe5-9944a024c8ec)
 Seasonality is stated as 'True' and defined as every 12 months (m). Differencing is explicitly defined as 1 to start with.
 Trace is set to 'True' so a detailed record of each model attempt is produced.
@@ -27,6 +29,7 @@ The returned model is ARIMA(0,1,1)(2,1,0)[12]
 The visual shows that the predicted values appear to follow the testing data fairly well. However accuracy metrics are required to further assess this.
 
 ### 4) Test Accuracy
+
 ![image](https://github.com/user-attachments/assets/677df5ce-54cb-4195-bd35-1e3b789798fc)
 An R-squared of 0.41 indicates that the model fits fairly well. The model explains 41% of the variance in the data.
 The mean absolute error (MAE) of 11.02 implies that there is a low magnitude of error.
@@ -50,12 +53,14 @@ MAPE = 26 --> predictions are off by a higher %
 As the PACF has significant peaks at lags 1, 2, 5, and 9 this could indicate that values could be strongly affected by values from 2 months ago. We can test changing seasonality to  2 i.e. m=2.
 
 The produced the following chart which clearly identifies it is a very poorly fitting model.
+
 ![image](https://github.com/user-attachments/assets/c3b5c290-981d-4086-8898-5ebff674a1b0)
 
 Therefore, we revert to using the model ARIMA(0,1,1)(2,1,0)[12].
 
 ### 7) Residual Analysis
 Residual analysis in a residual distribution plot demonstrates that the residuals are normally distributed. This indicates that the assumptions made by he model are valid.
+
 ![image](https://github.com/user-attachments/assets/2b8b1807-d810-4584-8cb8-19b773adc89d)
 ![image](https://github.com/user-attachments/assets/e74266f3-893f-400b-92ef-1a7243937267)
 
@@ -64,19 +69,23 @@ Residual analysis in a residual distribution plot demonstrates that the residual
 The index is set to the monthly frequency.
 A period of 12 future dates are generated using the test dataset index.
 The forecasted data is then combined with the future dates.
+
 ![image](https://github.com/user-attachments/assets/6263e366-fa7b-46a8-a462-2f09c2942e05)
 ![image](https://github.com/user-attachments/assets/2e6bc544-3297-4d79-b715-47d9571a1e1c)
 
 ### 2) Visualise forecast values and actual values
+
 ![image](https://github.com/user-attachments/assets/155d4337-fe2f-4278-8a29-b4455d5bf4f2)
 The forecast values are shown in orange
 
 ## Export Data
 ### 1) Combine the dataframes
 The dataframe containing forecasted values is merged on the indices with the monthly dataset. This ensures that all values from each dataframe are kept.
+
 ![image](https://github.com/user-attachments/assets/4de20324-8a2e-4eff-b160-d5bb4d9d68fa)
 
 ### 2) Export to CSV
+
 ![image](https://github.com/user-attachments/assets/d60b6199-cd6b-4144-9f55-faa0df005a8a)
 
 ## Repeat the Process for Tommies Data
@@ -87,19 +96,24 @@ The process was repeated for the tommies dataset. The key differences were as fo
 
 ### PACF
 * PACF ony had significant peaks at lags 1, 4, and 8
-* ![image](https://github.com/user-attachments/assets/47c4ba2d-aa50-49f3-b936-ce0979ba05fd)
+  
+![image](https://github.com/user-attachments/assets/47c4ba2d-aa50-49f3-b936-ce0979ba05fd)
 
 ### Stationarity
 * ADF confirmed the monthly data to be stationary so differencing was not required
-* ![image](https://github.com/user-attachments/assets/54bb1c1a-2c86-4cb6-b14b-baee456cbfba)
+  
+![image](https://github.com/user-attachments/assets/54bb1c1a-2c86-4cb6-b14b-baee456cbfba)
 * However, upon running the model, it produced a better fit if D=1
 
 ### Seasonality
 * seasonality - quarterly - peaks every 12-13 weeks.
 * m = 3
-* ![image](https://github.com/user-attachments/assets/f9efbf32-933e-4c36-a8b9-f2b7afb5c470)
+
+![image](https://github.com/user-attachments/assets/f9efbf32-933e-4c36-a8b9-f2b7afb5c470)
+
 * Whilst seasonality had been detected as quarterly initially, when this was incorporated into the model, poor results were given
-* ![image](https://github.com/user-attachments/assets/4d3223c1-3d4e-404a-bbe4-8fc361fbc6d8)
+  
+![image](https://github.com/user-attachments/assets/4d3223c1-3d4e-404a-bbe4-8fc361fbc6d8)
 
 * Therefore, bi-annual seasonality and annual seasonality were attempted to assess if these were stronger trends.
 
