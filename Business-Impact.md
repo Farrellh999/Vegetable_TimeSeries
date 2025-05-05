@@ -2,7 +2,7 @@
 title: Business Impact
 layout: default
 ---
-[🏠]({{site.baseurl}}/index) • [⬅️]({{site.baseurl}}/Dashboard) • [➡️ Next: Conclusion]({{site.baseurl}}/Conclusion)
+[🏠]({{site.baseurl}}/index) • [⬅️]({{site.baseurl}}/Dashboard) • [➡️ Next: Conclusion]({{site.baseurl}}/Conclusion-Recommendations)
 
 # Business Impact
 This project has produced a tool for an organisation to use to make cost effective business decisions. 
