@@ -1,26 +1,8 @@
 ---
 title: Introduction
 layout: default
-sidebar_menu:
-  - title: Introduction
-    url: "/Introduction"
-  - title: Project Background
-    url: "/Project-Background"
-  - title: Project Summary
-    url: "/Project-Summary"
-  - title: Data Preparation
-    url: "/Data-Preparation"
-  - title: Analysis
-    url: "/Analysis"
-  - title: Dashboard
-    url: "/Dashboard"
-  - title: Business Impact
-    url: "/Business-Impact"
-  - title: Conclusion
-    url: "/Conclusion"
-  - title: References
-    url: "/References"
 ---
+[➡️ Next: Project Background]({{site.baseurl}}/Project-Background) • [🏠 Return to Homepage]({{site.baseurl}}/index)
 
 # Introduction
 # Data Science Project: Tommies or Tatties?
@@ -45,6 +27,6 @@ The forecast may influence the use of a certain ingredient at a time when that i
 # Data Sources
 The dataset can be found at [https://www.kaggle.com/datasets/ramkrijal/agriculture-vegetables-fruits-time-series-prices?resource=download]. This a public dataset, readily available to download to anyone who has a free Kaggle account.
 
-[➡️ Next: Project Background]({{site.baseurl}}/Project-Background)
+[➡️ Next: Project Background]({{site.baseurl}}/Project-Background) • 
 
 [🏠 Return to Homepage]({{site.baseurl}}/index)
