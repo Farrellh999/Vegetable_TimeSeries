@@ -54,13 +54,13 @@ Upon further inspection, it is clear that these outliers appear to fall during t
 Stationarity is confirmed and therefore no differencing is required.
 
 ### 10) Resample data into monthly increments
-Previous attempts at running the model on daily data had proved to make my computer crash! I higher spec computer is needed, but we settle at this stage for adjusting to monthly data, using teh average value.
+Previous attempts at running the model on daily data had proved to make my computer crash! A higher spec computer is needed, but we settle at this stage for adjusting to monthly data, using the average value.
 ![image](https://github.com/user-attachments/assets/a18c20f9-620d-40c9-af57-5b0f87e03a6d)
 
 ### 11) Perform seasonal decomposition on the monthly data
 
 ![image](https://github.com/user-attachments/assets/07540150-b2fa-4eb5-b83b-e94fbe0b6a93)
-The monthly data illustrates a major peak every 12 months, indicating that seasonlity is 12.
+The monthly data illustrates a major peak every 12 months, indicating that seasonlity is now 12.
 
 ### 12) Produce ACF and PACF charts to assess pdq,PDQ
 ![image](https://github.com/user-attachments/assets/9c7ebf67-9ba6-4868-90f5-fd3ee07b4681)
@@ -72,7 +72,7 @@ The PACF has significant peaks at lags 1, 2, 5, 9, 14, indicating strong seasona
 ![image](https://github.com/user-attachments/assets/4ab70b99-fc0a-438c-a477-2269ddb3258e)
 The monthly data is confirmed as non-stationary. Therefore we could proceed with differencing manually, however as we are using the auto-arima function, we will make a note to set d as 1.
 
-### 14) Split data into training and testing data sets
+### 14) Split data into training and testing data sets using an 80% split
 ![image](https://github.com/user-attachments/assets/d462af23-c9fc-4952-a3b8-1c3cbd0c3898)
 ![image](https://github.com/user-attachments/assets/bfa2d0f3-fc36-48b0-afe6-c2587038e8e0)
 
