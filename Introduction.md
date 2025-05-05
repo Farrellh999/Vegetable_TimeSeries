@@ -2,7 +2,7 @@
 title: Introduction
 layout: default
 ---
-[➡️ Next: Project Background]({{site.baseurl}}/Project-Background) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index) • [➡️ Next: Project Background]({{site.baseurl}}/Project-Background) 
 
 # Introduction: Tommies or Tatties?
 
