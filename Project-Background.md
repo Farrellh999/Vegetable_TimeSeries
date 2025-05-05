@@ -35,8 +35,8 @@ Once satisfied with the model, the next 12 months are forecast and then merged i
 
 The chosen model is imported into Power BI where custom measures are produced and incorporated into visuals to enable the end-user to interpret the model guidance easily.
 
-[Next: Project Summary]({{site.baseurl}}/Project-Summary)
+➡️ [Next: Project Summary]({{site.baseurl}}/Project-Summary)
 
-[Back]({{site.baseurl}}/Introduction)
+⬅️ [Back]({{site.baseurl}}/Introduction)
 
-[Return to Homepage]({{site.baseurl}}/index)
+🏠 [Return to Homepage]({{site.baseurl}}/index)
