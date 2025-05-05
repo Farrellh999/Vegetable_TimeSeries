@@ -18,6 +18,9 @@ Whilst these models run on the generic ingredient names, the actual raw data bre
 ### Code structure
 The current python script is written in a monolithic fashion which makes debugging and reusing the code difficult. It would be far better to write the code in a modular fashion in accordance with software engineering best practice, including unit tests to check the functions. This would enable the code to be applied to multiple different data sets, reusing the functions, without the need for timely re-writing of code.
 
+### Additional data
+It would be interesting to explore data sets covering the same time period looking at other potential contributing factors e.g. rainfall, country GDP. Further exploratory analysis could be performed to assess if there was a correlation between these new variables and incorporate them into the forecast model.
+
 [➡️ Next: References]({{site.baseurl}}/References)
 
 [⬅️ Back]({{site.baseurl}}/Business-Impact)
