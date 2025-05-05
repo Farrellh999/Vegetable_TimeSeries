@@ -119,8 +119,7 @@ May 2022 is chosen.
 April 2022 is chosen, and the data card values have changed to reflect this.
 
 
-
-
+[🔝 Back to Top](#top)
 
 [➡️ Next: Business Impact]({{site.baseurl}}/Business-Impact)
 
