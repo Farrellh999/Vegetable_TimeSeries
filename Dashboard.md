@@ -22,4 +22,8 @@ The guidance is provided using the following:
     4. Forecast prie > average AND > other ingredient = Do not buy
 
 
-[➡️ Next: Business Impact]({{site.baseurl}}/Business-Impact) • [⬅️ Back]({{site.baseurl}}/Analysis) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[➡️ Next: Business Impact]({{site.baseurl}}/Business-Impact)
+
+[⬅️ Back]({{site.baseurl}}/Analysis)
+
+[🏠 Return to Homepage]({{site.baseurl}}/index)
