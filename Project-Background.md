@@ -2,7 +2,7 @@
 title: Project Background
 layout: default
 ---
-[➡️ Next: Project Summary]({{site.baseurl}}/Project-Summary) • [⬅️ Back]({{site.baseurl}}/Introduction) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index) • [⬅️ Back]({{site.baseurl}}/Introduction) • [➡️ Next: Project Summary]({{site.baseurl}}/Project-Summary)
 
 # Project Background
 A chef must decide what the 'soup of the day' will be for a month period, ready to advertise to customers, based on the price of the main ingredient. This project focuses on assessing the forecasted price of the the two main ingredients potatoes ('tatties') and tomatoes ('tommies'). The model focuses on the tatties and tommies data separately, producing a separate forecast for each ingredient.
