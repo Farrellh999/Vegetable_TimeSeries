@@ -2,7 +2,7 @@
 title: Analysis
 layout: default
 ---
-[➡️ Next: Dashboard]({{site.baseurl}}/Dashboard) • [⬅️ Back]({{site.baseurl}}/Data-Preparation) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[🏠]({{site.baseurl}}/index) • [⬅️]({{site.baseurl}}/Data-Preparation) • [➡️ Next: Dashboard]({{site.baseurl}}/Dashboard)
 
 # Analysis - Run the ARIMA model
 ### 1) Import the necessary libraries
