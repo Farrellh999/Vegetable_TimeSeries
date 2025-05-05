@@ -75,6 +75,8 @@ The monthly data is confirmed as non-stationary. Therefore we could proceed with
 ![image](https://github.com/user-attachments/assets/d462af23-c9fc-4952-a3b8-1c3cbd0c3898)
 ![image](https://github.com/user-attachments/assets/bfa2d0f3-fc36-48b0-afe6-c2587038e8e0)
 
+[🔝 Back to Top](#top)
+
 ➡️ [Next: Analysis]({{site.baseurl}}/Analysis)
 
 ⬅️ [Back]({{site.baseurl}}/Project-Summary)
