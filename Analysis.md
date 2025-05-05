@@ -8,11 +8,13 @@ layout: default
 ### 1) Import the necessary libraries
 
 ![image](https://github.com/user-attachments/assets/c373dc90-ac2e-4182-8a89-0b6185e38922)
+
 The auto_arima function is imported from pmdarima. This will automatically detect values for (p,d,q)(P,D,Q).
 
 ### 2) Fit the model
 
 ![image](https://github.com/user-attachments/assets/9716c8c3-461e-4c75-8fe5-9944a024c8ec)
+
 Seasonality is stated as 'True' and defined as every 12 months (m). Differencing is explicitly defined as 1 to start with.
 Trace is set to 'True' so a detailed record of each model attempt is produced.
 Warnings are suppressed to produce a cleaner output.
@@ -20,17 +22,20 @@ Stepwise is set to 'False' in order to improve the chances of producing a better
 n_jobs = -1 is incorporated to allow for parallel processing using mutliple CPU code, to speed up the model.
 
 ![image](https://github.com/user-attachments/assets/58486873-b292-4216-b513-d98b80003393)
+
 The returned model is ARIMA(0,1,1)(2,1,0)[12]
 
 ### 3) Predict values and plot against Test data
 
 ![image](https://github.com/user-attachments/assets/19a588df-68fc-4113-9047-8b3cae3f7380)
 ![image](https://github.com/user-attachments/assets/078c9fc4-7d24-4e22-90c4-aed0f96a0520)
+
 The visual shows that the predicted values appear to follow the testing data fairly well. However accuracy metrics are required to further assess this.
 
 ### 4) Test Accuracy
 
 ![image](https://github.com/user-attachments/assets/677df5ce-54cb-4195-bd35-1e3b789798fc)
+
 An R-squared of 0.41 indicates that the model fits fairly well. The model explains 41% of the variance in the data.
 The mean absolute error (MAE) of 11.02 implies that there is a low magnitude of error.
 The mean absolute percentage error (MAPE) of 19.28 indicates that predictions will be off by approximately 20%. 
@@ -76,6 +81,7 @@ The forecasted data is then combined with the future dates.
 ### 2) Visualise forecast values and actual values
 
 ![image](https://github.com/user-attachments/assets/155d4337-fe2f-4278-8a29-b4455d5bf4f2)
+
 The forecast values are shown in orange
 
 ## Export Data
@@ -103,6 +109,7 @@ The process was repeated for the tommies dataset. The key differences were as fo
 * ADF confirmed the monthly data to be stationary so differencing was not required
   
 ![image](https://github.com/user-attachments/assets/54bb1c1a-2c86-4cb6-b14b-baee456cbfba)
+
 * However, upon running the model, it produced a better fit if D=1
 
 ### Seasonality
