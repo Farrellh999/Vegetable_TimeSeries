@@ -11,8 +11,8 @@ Can a SARIMA time-series forecasting model help a chef to make the most cost eff
 
 ## Outcome
 
-➡️ [Next: Data Preparation]({{site.baseurl}}/Data-Preparation)
+[➡️ Next: Data Preparation]({{site.baseurl}}/Data-Preparation)
 
-⬅️ [Back]({{site.baseurl}}/Project-Background)
+[⬅️ Back]({{site.baseurl}}/Project-Background)
 
-🏠 [Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index)
