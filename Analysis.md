@@ -2,6 +2,7 @@
 title: Analysis
 layout: default
 ---
+[➡️ Next: Dashboard]({{site.baseurl}}/Dashboard) • [⬅️ Back]({{site.baseurl}}/Data-Preparation) • [🏠 Return to Homepage]({{site.baseurl}}/index)
 
 # Analysis
 ## Run the ARIMA model
@@ -115,8 +116,4 @@ The process was repeated for the tommies dataset. The key differences were as fo
 
 [🔝 Back to Top](#top)
 
-[➡️ Next: Dashboard]({{site.baseurl}}/Dashboard)
-
-[⬅️ Back]({{site.baseurl}}/Data-Preparation)
-
-[🏠 Return to Homepage]({{site.baseurl}}/index)
+[➡️ Next: Dashboard]({{site.baseurl}}/Dashboard) • [⬅️ Back]({{site.baseurl}}/Data-Preparation) • [🏠 Return to Homepage]({{site.baseurl}}/index)
