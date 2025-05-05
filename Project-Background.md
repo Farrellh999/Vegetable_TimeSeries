@@ -34,3 +34,8 @@ A time series SARIMA forecasting model is run following data cleansing in python
 Once satisfied with the model, the next 12 months are forecast and then merged into the original dataframe, before being exported to a csv file.
 
 The chosen model is imported into Power BI where custom measures are produced and incorporated into visuals to enable the end-user to interpret the model guidance easily.
+
+[Now head to Project Summary]({{site.baseurl}}/Project-Summary)
+
+[Or return to Homepage]({{site.baseurl}}/index)
+
