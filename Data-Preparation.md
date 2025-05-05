@@ -2,7 +2,7 @@
 title: Data Preparation
 layout: default
 ---
-[🏠 Return to Homepage]({{site.baseurl}}/index) • [⬅️ Back]({{site.baseurl}}/Project-Summary) •  [➡️ Next: Analysis]({{site.baseurl}}/Analysis)
+[🏠]({{site.baseurl}}/index) • [⬅️]({{site.baseurl}}/Project-Summary) •  [➡️ Next: Analysis]({{site.baseurl}}/Analysis)
 
 # Data Preparation
 The dataset is a publicly available dataset from Kaggle.com that provides daily average/min/max prices/unit data on a variety of vegetables between a large, relatively recent date range (June 2013 and May 2021) in Nepal. The data is well structured and labelled, making interpretation easy. However, it does fail to specify the currency; for this project we choose to use GBP, but this should be explored further before implementing into a real-world scenario. The table headers do not make it abundantly clear that the minimum, maximum, and average are the prices per unit, and this would be important for context.
