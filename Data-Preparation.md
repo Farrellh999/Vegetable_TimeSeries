@@ -77,8 +77,8 @@ The monthly data is confirmed as non-stationary. Therefore we could proceed with
 
 [🔝 Back to Top](#top)
 
-➡️ [Next: Analysis]({{site.baseurl}}/Analysis)
+[➡️ Next: Analysis]({{site.baseurl}}/Analysis)
 
-⬅️ [Back]({{site.baseurl}}/Project-Summary)
+[⬅️ Back]({{site.baseurl}}/Project-Summary)
 
-🏠 [Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index)
