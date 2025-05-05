@@ -112,3 +112,9 @@ The process was repeated for the tommies dataset. The key differences were as fo
 * ![image](https://github.com/user-attachments/assets/811bc77a-b96a-4224-bd0d-f6510529422a)
 * Whilst still not fantastic, the accuracy metrics were far better and the data visual appear a much better fit
 * ![image](https://github.com/user-attachments/assets/29c25474-d7df-4a29-babf-3e1ed54416e4)
+
+[Next: Dashboard]({{site.baseurl}}/Dashboard)
+
+[Back]({{site.baseurl}}/Data-Preparation)
+
+[Return to Homepage]({{site.baseurl}}/index)
