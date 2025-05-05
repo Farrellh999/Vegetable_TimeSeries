@@ -76,8 +76,29 @@ Custom columns were created in each dataset to identify:
 ![image](https://github.com/user-attachments/assets/9b96acbe-8031-4ba7-8f76-7d5712a15adb)
 ![image](https://github.com/user-attachments/assets/0c29fdf6-c422-4f2c-b8fb-631a49ecce09)
 
+## Dashboard Visuals
+### 1) Forecast Chart
+The monthly average prices and forecast average prices were plotted on a line chart for each ingredient.
+The known monthly average prices are black, with a circle marker, to help differentiate from the forecast prices, which are purple with no marker.
+A zoom slider is included to allow the user to zoom into specific time/price ranges.
+Each chart is clearly labelled and a specifc border colour is used to differentiate the two.
+The chart background transparency is set to 34% to ensure the visualisation is still clear and easy to read, however not too jarring from the background.
 
+![image](https://github.com/user-attachments/assets/37ee844c-a286-441a-9c97-9ea811f43c20)
 
+### 2) Date Slicer
+A slicer is produced to list all the available Month-Years in the date table. This acts on the data cards only i.e. does not affect the line charts, to ensure the line charts do not change as the chosen month is selected.
+
+![image](https://github.com/user-attachments/assets/cc5d883b-1fcc-4098-8106-99e0bb8d8517)
+Date slicer.
+
+![image](https://github.com/user-attachments/assets/3444f3a9-216c-43c2-84ae-591e4c2c8af4)
+Slicer interactions are edited to exclude interacting with the line charts.
+
+### 3) Data Cards
+Two data cards are displayed for each ingredient. The first data card shows the price (actual/forecast) for the month chosen in the slicer. The second data card, below the first, displays the value from the custom column 'Buy/DNBuy' in each dataset, which provides guidance to the user on what action they should consider. Each data card shares the same colour as the respective ingredients line chart border. Each data card also has a clear label.
+
+![image](https://github.com/user-attachments/assets/32593313-b785-45f4-b734-6d64114fa8c3) ![image](https://github.com/user-attachments/assets/a046b060-2a8c-400e-b781-45df9e5f6730)
 
 
 
