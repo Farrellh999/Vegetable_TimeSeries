@@ -22,6 +22,6 @@ The pages below take you through my journey of explore a dataset, running time-s
 
 [Business Impact](Business-Impact.html)
 
-[Conclusion](Conclusion.html)
+[Conclusion & Recommendations](Conclusion-Recommendations.html)
 
 [References](References.html)
