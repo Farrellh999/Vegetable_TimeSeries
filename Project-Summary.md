@@ -2,7 +2,7 @@
 title: Project Summary
 layout: default
 ---
-[➡️ Next: Data Preparation]({{site.baseurl}}/Data-Preparation) • [⬅️ Back]({{site.baseurl}}/Project-Background) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index) • [⬅️ Back]({{site.baseurl}}/Project-Background) • [➡️ Next: Data Preparation]({{site.baseurl}}/Data-Preparation) 
 
 # Project Summary
 
