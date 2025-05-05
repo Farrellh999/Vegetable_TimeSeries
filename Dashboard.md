@@ -90,9 +90,11 @@ The chart background transparency is set to 34% to ensure the visualisation is s
 A slicer is produced to list all the available Month-Years in the date table. This acts on the data cards only i.e. does not affect the line charts, to ensure the line charts do not change as the chosen month is selected.
 
 ![image](https://github.com/user-attachments/assets/cc5d883b-1fcc-4098-8106-99e0bb8d8517)
+
 Date slicer.
 
 ![image](https://github.com/user-attachments/assets/3444f3a9-216c-43c2-84ae-591e4c2c8af4)
+
 Slicer interactions are edited to exclude interacting with the line charts.
 
 ### 3) Data Cards
@@ -100,7 +102,21 @@ Two data cards are displayed for each ingredient. The first data card shows the 
 
 ![image](https://github.com/user-attachments/assets/32593313-b785-45f4-b734-6d64114fa8c3) ![image](https://github.com/user-attachments/assets/a046b060-2a8c-400e-b781-45df9e5f6730)
 
+The background of each data card is conditionally formatted to change colour according to the value in the 'Buy/DNBuy' column. This helps to highlight the message.
 
+![image](https://github.com/user-attachments/assets/1c913c3f-2f24-4f40-9d47-49fd1b542b45)
+
+
+## Dashboard Interaction
+When a date is chosen from the date slicer, the data card values reflect the change.
+
+![image](https://github.com/user-attachments/assets/564c08b1-a783-4f36-a7ea-6b5f495896fd)
+
+May 2022 is chosen.
+
+![image](https://github.com/user-attachments/assets/d2806e7a-4462-4e08-a5e0-a5675fde0b3c)
+
+April 2022 is chosen, and the data card values have changed to reflect this.
 
 
 
