@@ -2,7 +2,7 @@
 layout: default
 title: References
 ---
-[⬅️ Back]({{site.baseurl}}/Conclusion) • [🏠 Return to Homepage]({{site.baseurl}}/index)
+[🏠 Return to Homepage]({{site.baseurl}}/index) • [⬅️]({{site.baseurl}}/Conclusion)
 
 # References
 
